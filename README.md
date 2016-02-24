@@ -10,13 +10,14 @@ This is a to do list application with tasks and categories. It demonstrates data
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Clone this repo
+* Navigate to the project folder in shell and run the following commands for access to shell commands:
 
-This app requires a database called `todo` with a `tasks` and `categories` table. To create this database, connect to your server and use the following commands:<br>
+```
+> dnu restore
+```
+
+* This app requires a database called `todo` with a `tasks` and `categories` table. To create this database, connect to your server and use the following commands:<br>
 
 > CREATE DATABASE todo;<br>
 > GO<br>
@@ -26,6 +27,18 @@ This app requires a database called `todo` with a `tasks` and `categories` table
 > CREATE TABLE tasks (id INT IDENTITY(1,1), description VARCHAR(255), category_id INT);<br>
 > GO
 
+* Testing requires a clone of this database named `todo_test`
+* To run tests, navigate to the project folder in shell and run
+
+```
+> dnx test
+```
+
+* To run this app, navigate to project folder in shell and run
+
+```
+> dnx kestrel
+```
 
 
 ## Known Bugs
@@ -38,7 +51,7 @@ Feel free to contact me through GitHub.
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+C# v4.0, DNX 451, Nancy v1.3, xunit v2.1.0, kestrel server
 
 ### License
 
